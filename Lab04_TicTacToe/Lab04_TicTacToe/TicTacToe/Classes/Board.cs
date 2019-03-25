@@ -29,9 +29,7 @@ namespace Lab04_TicTacToe.Classes
                     Console.Write(GameBoard[i, j]);
                 }
                 Console.WriteLine();
-            }
-			//TODO: Output the board to the console
-		
+            }	
 		}
 	}
 }
