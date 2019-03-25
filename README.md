@@ -1,12 +1,12 @@
 # Lab04-Tic-Tac-Toe
-#### Lab04-Word-Guess-Game
+#### Lab04_TicTacToe
 ##### *Author: Ian Gifford*
 
 ------------------------------
 
 ## Description
 
-This is a C# console game that is tic tac toe.
+This is a C# console game that is tic tac toe. Two players can name themselves and following the prompts can begin a game. Using a multidimensional array which is the game board, the users can select a number that corresponds to a location on the board. Alternating turns allows the users to switch every turn until either a winning condition is met, or a draw happens and no winner is declared. 
 
 ------------------------------
 
@@ -46,7 +46,7 @@ Enjoy.
 ------------------------------
 
 ## Change Log
-1.0: *Initial build complete, awaiting review* - 24 MAR 2019
+1.0: *Initial build not complete, awaiting review/assitance* - 24 MAR 2019
 
 
 
