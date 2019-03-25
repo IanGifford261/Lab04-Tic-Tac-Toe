@@ -36,15 +36,11 @@ namespace Lab04_TicTacToe.Classes
             Board.DisplayBoard();
             while (win == false && plays < 9)
             {
-                if (PlayerOne.IsTurn)
+                if (PlayerOne.IsTurn == true)
                 {
 
                     PlayerOne.TakeTurn(Board);                    
                     
-                }
-                else
-                {
-                    SwitchPlayer();
                 }
 
                 if (PlayerTwo.IsTurn)
