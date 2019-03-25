@@ -31,12 +31,21 @@ namespace Lab04_TicTacToe.Classes
 		public Player Play()
 		{
             bool win = false;
-            Board.DisplayBoard();
-            while (win == false)
-            {
-                if (true)
-                {
+            int plays = 0;
 
+            Board.DisplayBoard();
+            while (win == false && plays < 9)
+            {
+                if (PlayerOne.IsTurn)
+                {
+                    PlayerOne.TakeTurn(Board);
+                    Board.DisplayBoard();
+                    SwitchPlayer();
+                    return NextPlayer();
+                }
+                else if (plays == 9)
+                {
+                    return null;
                 }
             }
 
