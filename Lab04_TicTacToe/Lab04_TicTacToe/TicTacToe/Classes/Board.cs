@@ -26,7 +26,7 @@ namespace Lab04_TicTacToe.Classes
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    Console.Write(GameBoard[i, j]);
+                    Console.Write(" | " + GameBoard[i, j] + " | ");
                 }
                 Console.WriteLine();
             }	

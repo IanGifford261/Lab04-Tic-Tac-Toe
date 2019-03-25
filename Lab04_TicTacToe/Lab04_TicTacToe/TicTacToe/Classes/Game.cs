@@ -42,6 +42,11 @@ namespace Lab04_TicTacToe.Classes
                     PlayerOne.TakeTurn(Board);                    
                     
                 }
+                else
+                {
+                    SwitchPlayer();
+                }
+
                 if (PlayerTwo.IsTurn)
                 {
 
@@ -52,6 +57,7 @@ namespace Lab04_TicTacToe.Classes
                 CheckForWinner(Board);
                 
             }
+            return Winner;
 
 
 
