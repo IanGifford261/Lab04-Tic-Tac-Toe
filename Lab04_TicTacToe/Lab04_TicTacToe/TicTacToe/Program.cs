@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab04_TicTacToe.Classes;
+using System;
 
 namespace Lab04_TicTacToe
 {
@@ -36,6 +37,7 @@ namespace Lab04_TicTacToe
 
             Player player1 = new Player
             {
+
                 Name = p1,
                 Marker = "X",
                 IsTurn = true
