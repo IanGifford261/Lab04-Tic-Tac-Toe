@@ -30,6 +30,40 @@ namespace Lab04_TicTacToe.Classes
 		/// <returns>Winner</returns>
 		public Player Play()
 		{
+            bool win = false;
+            Player playerTracker = null;
+
+            Board.DisplayBoard();
+            while (Winner is null)
+            {
+                if (PlayerOne.IsTurn)
+                {
+                    PlayerOne.TakeTurn(Board);
+                    playerTracker = PlayerOne;
+                }
+
+                if (PlayerTwo.IsTurn)
+                {
+                    PlayerTwo.TakeTurn(Board);
+                    playerTracker = PlayerTwo;
+                }
+                Console.Clear();
+                Board.DisplayBoard();
+                win = CheckForWinner(Board);
+                if (win)
+                {
+                    Winner = playerTracker;
+                }
+                SwitchPlayer();
+            } 
+            return Winner;
+            
+
+
+
+
+
+
 
 			//TODO: Complete this method and utilize the rest of the class structure to play the game.
 
@@ -81,6 +115,11 @@ namespace Lab04_TicTacToe.Classes
 				string a = Board.GameBoard[p1.Row, p1.Column];
 				string b = Board.GameBoard[p2.Row, p2.Column];
 				string c = Board.GameBoard[p3.Row, p3.Column];
+
+                if (a == b && b ==c)
+                {
+                    return false;
+                }
 
 				// TODO:  Determine a winner has been reached. 
 				// return true if a winner has been reached. 
