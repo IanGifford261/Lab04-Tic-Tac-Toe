@@ -40,12 +40,8 @@ namespace Lab04_TicTacToe.Classes
                 {
 
                     PlayerOne.TakeTurn(Board);
-                    Board.DisplayBoard(); 
-
-                }
-                else if (plays == 9)
-                {
-                    return null;
+                    Board.DisplayBoard();
+                    CheckForWinner(Board);
                 }
                 if (PlayerTwo.IsTurn)
                 {
@@ -58,6 +54,10 @@ namespace Lab04_TicTacToe.Classes
                 {
                     return null;
                 }
+
+                CheckForWinner(Board);
+                Board.DisplayBoard();
+                
 
             }
 
