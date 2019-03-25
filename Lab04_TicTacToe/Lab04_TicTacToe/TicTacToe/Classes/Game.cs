@@ -38,15 +38,27 @@ namespace Lab04_TicTacToe.Classes
             {
                 if (PlayerOne.IsTurn)
                 {
+
                     PlayerOne.TakeTurn(Board);
-                    Board.DisplayBoard();
-                    SwitchPlayer();
-                    return NextPlayer();
+                    Board.DisplayBoard(); 
+
                 }
                 else if (plays == 9)
                 {
                     return null;
                 }
+                if (PlayerTwo.IsTurn)
+                {
+
+                    PlayerTwo.TakeTurn(Board);
+                    Board.DisplayBoard();
+
+                }
+                else if (plays == 9)
+                {
+                    return null;
+                }
+
             }
 
 
