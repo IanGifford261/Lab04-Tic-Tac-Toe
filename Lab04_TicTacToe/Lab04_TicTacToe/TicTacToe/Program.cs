@@ -2,8 +2,9 @@
 
 namespace Lab04_TicTacToe
 {
-    class Program
+    public class Program
     {
+
         static void Main(string[] args)
         {
             Console.WriteLine(@"
@@ -30,6 +31,7 @@ namespace Lab04_TicTacToe
             Console.WriteLine(" ");
             Console.WriteLine(" Player One, enter your name");
             Console.WriteLine(" ");
+
             string p1 = Console.ReadLine();
 
             Player player1 = new Player
