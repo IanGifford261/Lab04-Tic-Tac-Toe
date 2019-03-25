@@ -30,7 +30,11 @@ namespace Lab04_TicTacToe.Classes
 		/// <returns>Winner</returns>
 		public Player Play()
 		{
+            Board.DisplayBoard();
+            while (PlayerOne = true)
+            {
 
+            }
 
 
 
