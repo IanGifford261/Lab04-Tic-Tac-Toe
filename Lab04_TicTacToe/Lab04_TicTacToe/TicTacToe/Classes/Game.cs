@@ -54,7 +54,14 @@ namespace Lab04_TicTacToe.Classes
                 CheckForWinner(Board);
                 SwitchPlayer();
             }
+            if(win == true)
+            {
+                Console.WriteLine($" Congrats {Winner} you win!");
+                return Winner;
+            }
+
             return Winner;
+            
 
 
 
