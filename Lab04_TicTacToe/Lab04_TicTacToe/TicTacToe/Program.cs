@@ -10,7 +10,9 @@ namespace Lab04_TicTacToe
         {
             PlayGame();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         static void PlayGame()
         {
             Console.Clear();
