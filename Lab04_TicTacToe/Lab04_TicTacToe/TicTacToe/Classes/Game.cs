@@ -55,9 +55,7 @@ namespace Lab04_TicTacToe.Classes
                     Winner = playerTracker;
                 }
                 SwitchPlayer();
-            }
-            
-
+            } 
             return Winner;
             
 
