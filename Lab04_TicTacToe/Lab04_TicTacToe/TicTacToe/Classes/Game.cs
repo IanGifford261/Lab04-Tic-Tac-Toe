@@ -30,10 +30,14 @@ namespace Lab04_TicTacToe.Classes
 		/// <returns>Winner</returns>
 		public Player Play()
 		{
+            bool win = false;
             Board.DisplayBoard();
-            while (PlayerOne = true)
+            while (win == false)
             {
+                if (true)
+                {
 
+                }
             }
 
 
