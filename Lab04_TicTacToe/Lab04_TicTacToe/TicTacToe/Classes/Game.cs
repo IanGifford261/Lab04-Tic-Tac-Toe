@@ -57,8 +57,8 @@ namespace Lab04_TicTacToe.Classes
 
                 CheckForWinner(Board);
                 Board.DisplayBoard();
-                
 
+                return Player
             }
 
 
