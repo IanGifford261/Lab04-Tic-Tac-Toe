@@ -34,21 +34,20 @@ Enjoy.
 ## Visuals
 
 ##### Application Start
-![Image 1]()
+![Picking Players](https://github.com/IanGifford261/Lab04-Tic-Tac-Toe/blob/master/Lab04_TicTacToe/Assets/Screenshot%20(123).png)
 ##### Using the Application
-![Image 2]()
-![Image 3]()
-![Image 4]()
-![Image 5]()
+![Player one turn](https://github.com/IanGifford261/Lab04-Tic-Tac-Toe/blob/master/Lab04_TicTacToe/Assets/Screenshot%20(125).png)
+![Player two turn](https://github.com/IanGifford261/Lab04-Tic-Tac-Toe/blob/master/Lab04_TicTacToe/Assets/Screenshot%20(126).png)
 ##### Application End
-![Image 6]()
+![end game](https://github.com/IanGifford261/Lab04-Tic-Tac-Toe/blob/master/Lab04_TicTacToe/Assets/Screenshot%20(127).png)
 
 ------------------------------
 
 ## Change Log
 1.0: *Initial build not complete, awaiting review/assitance* - 24 MAR 2019
-
+2.0: *Initial build Complete* - 30 MAR 2019
 
 
 ------------------------------
 #### Credit to assistance ####
+Dan Logerstedt
