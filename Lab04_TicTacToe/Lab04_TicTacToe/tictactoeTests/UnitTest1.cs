@@ -30,7 +30,7 @@ namespace tictactoeTests
         }
 
         [Fact]
-        public void TestForNoWinDrawCondition()
+        public void TestForDrawCondition()
         {
 
         }
