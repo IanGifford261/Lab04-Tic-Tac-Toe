@@ -34,6 +34,8 @@ namespace Lab04_TicTacToe.Classes
             bool win = false;
             Player playerTracker = null;
 
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
             Board.DisplayBoard();
             while (Winner is null && plays < 9)
             {
@@ -49,6 +51,8 @@ namespace Lab04_TicTacToe.Classes
                     PlayerTwo.TakeTurn(Board);
                 }
                 Console.Clear();
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
                 Board.DisplayBoard();
                 win = CheckForWinner(Board);
                 if (win)
@@ -56,11 +60,9 @@ namespace Lab04_TicTacToe.Classes
                     Winner = playerTracker;
                 }
                 plays++;
-                SwitchPlayer();
-                
+                SwitchPlayer();                
             } 
             return Winner;
-
 		}
 
 
@@ -99,13 +101,8 @@ namespace Lab04_TicTacToe.Classes
                 if (a == b && b == c)
                 {
                     return true;
-                }
-
-				// TODO:  Determine a winner has been reached. 
-				// return true if a winner has been reached. 
-			
+                }			
 			}
-
 			return false;
 		}
 
@@ -125,11 +122,8 @@ namespace Lab04_TicTacToe.Classes
 		public void SwitchPlayer()
 		{
 			if (PlayerOne.IsTurn)
-			{
-              
-				PlayerOne.IsTurn = false;
-
-              
+			{              
+				PlayerOne.IsTurn = false;              
 				PlayerTwo.IsTurn = true;
 			}
 			else
