@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab04_TicTacToe.Classes
 {
-	class Game
+	public class Game
 	{
 		public Player PlayerOne { get; set; }
 		public Player PlayerTwo { get; set; }
@@ -34,6 +34,8 @@ namespace Lab04_TicTacToe.Classes
             bool win = false;
             Player playerTracker = null;
 
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
             Board.DisplayBoard();
             while (Winner is null && plays < 9)
             {
@@ -49,6 +51,8 @@ namespace Lab04_TicTacToe.Classes
                     PlayerTwo.TakeTurn(Board);
                 }
                 Console.Clear();
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
                 Board.DisplayBoard();
                 win = CheckForWinner(Board);
                 if (win)
@@ -56,34 +60,9 @@ namespace Lab04_TicTacToe.Classes
                     Winner = playerTracker;
                 }
                 plays++;
-                SwitchPlayer();
-                
+                SwitchPlayer();                
             } 
             return Winner;
-            
-
-
-
-
-
-
-
-			//TODO: Complete this method and utilize the rest of the class structure to play the game.
-
-            /*
-             * Complete this method by constructing the logic for the actual playing of Tic Tac Toe. 
-             * 
-             * A few things to get you started:
-            1. A turn consists of a player picking a position on the board with their designated marker. 
-            2. Display the board after every turn to show the most up to date state of the game
-            3. Once a Winner is determined, display the board one final time and return a winner
-
-            Few additional hints:
-                Be sure to keep track of the number of turns that have been taken to determine if a draw is required
-                and make sure that the game continues while there are unmarked spots on the board. 
-
-            Use any and all pre-existing methods in this program to help construct the method logic. 
-             */
 		}
 
 
@@ -122,13 +101,8 @@ namespace Lab04_TicTacToe.Classes
                 if (a == b && b == c)
                 {
                     return true;
-                }
-
-				// TODO:  Determine a winner has been reached. 
-				// return true if a winner has been reached. 
-			
+                }			
 			}
-
 			return false;
 		}
 
@@ -148,11 +122,8 @@ namespace Lab04_TicTacToe.Classes
 		public void SwitchPlayer()
 		{
 			if (PlayerOne.IsTurn)
-			{
-              
-				PlayerOne.IsTurn = false;
-
-              
+			{              
+				PlayerOne.IsTurn = false;              
 				PlayerTwo.IsTurn = true;
 			}
 			else
