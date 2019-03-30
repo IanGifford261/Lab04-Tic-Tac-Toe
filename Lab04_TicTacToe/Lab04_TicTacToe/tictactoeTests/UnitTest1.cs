@@ -28,6 +28,10 @@ namespace tictactoeTests
             Player p1 = new Player();
             Player p2 = new Player();
             Game game = new Game(p1, p2);
+
+            game.PlayerOne.IsTurn = true;
+            game.SwitchPlayer();
+            Assert.Equal(game.PlayerTwo, game.NextPlayer());
         }
 
 
